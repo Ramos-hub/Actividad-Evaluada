@@ -65,4 +65,4 @@ select * from Zapatos;
 ----------------------->Vista
 CREATE VIEW vistaCategoria AS
 SELECT Z.Id AS [N° de Registro], Z.Nombre, Z.Precio, Z.ImagenURL, C.Nombre AS Categoria FROM Zapatos Z
-            INNER JOIN Categorias C ON Z.CategoriaId = C.Id
+            INNER JOIN C	ategorias C ON Z.CategoriaId = C.Id

@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vistas", "Vistas", "{69A53E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vistas", "Vistas\Vistas.csproj", "{7A029E45-75EB-4181-AB4D-3323EFF5646D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A029E45-75EB-4181-AB4D-3323EFF5646D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A029E45-75EB-4181-AB4D-3323EFF5646D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A029E45-75EB-4181-AB4D-3323EFF5646D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A029E45-75EB-4181-AB4D-3323EFF5646D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9} = {5EBF65C7-8E33-483C-83B9-1E90CF587A0B}
+		{7A029E45-75EB-4181-AB4D-3323EFF5646D} = {69A53ED5-57C3-41C3-BCEA-EE9967C59F06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD5E682D-0D60-4A0A-A648-3F3A73606C4A}
