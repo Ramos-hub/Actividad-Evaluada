@@ -30,10 +30,10 @@
         {
             this.tcPestañas = new System.Windows.Forms.TabControl();
             this.tbRegistrarZapatos = new System.Windows.Forms.TabPage();
-            this.tbActualizarInfo = new System.Windows.Forms.TabPage();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnAñadirImagen = new System.Windows.Forms.Button();
             this.gbProductosAlmacen = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvAlmacen = new System.Windows.Forms.DataGridView();
             this.pb = new System.Windows.Forms.PictureBox();
             this.gbInfoZapato = new System.Windows.Forms.GroupBox();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
@@ -44,9 +44,15 @@
             this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombreZapato = new System.Windows.Forms.Label();
-            this.btnAñadirImagen = new System.Windows.Forms.Button();
+            this.tbActualizarInfo = new System.Windows.Forms.TabPage();
+            this.btnActualizarRegistro = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.gbProductosAlmacen2 = new System.Windows.Forms.GroupBox();
+            this.dgvEdit = new System.Windows.Forms.DataGridView();
             this.gbInfoZapato2 = new System.Windows.Forms.GroupBox();
-            this.cmbCategoia2 = new System.Windows.Forms.ComboBox();
+            this.cbActualizar = new System.Windows.Forms.ComboBox();
             this.dtpFechaRegistro2 = new System.Windows.Forms.DateTimePicker();
             this.txtPrecio2 = new System.Windows.Forms.TextBox();
             this.txtNombreZapato2 = new System.Windows.Forms.TextBox();
@@ -54,23 +60,17 @@
             this.lblFechaRegistro2 = new System.Windows.Forms.Label();
             this.lblPrecio2 = new System.Windows.Forms.Label();
             this.lblNombreZapato2 = new System.Windows.Forms.Label();
-            this.gbProductosAlmacen2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnActualizarRegistro = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tcPestañas.SuspendLayout();
             this.tbRegistrarZapatos.SuspendLayout();
-            this.tbActualizarInfo.SuspendLayout();
             this.gbProductosAlmacen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.gbInfoZapato.SuspendLayout();
-            this.gbInfoZapato2.SuspendLayout();
+            this.tbActualizarInfo.SuspendLayout();
             this.gbProductosAlmacen2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEdit)).BeginInit();
+            this.gbInfoZapato2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcPestañas
@@ -86,71 +86,67 @@
             // 
             // tbRegistrarZapatos
             // 
+            this.tbRegistrarZapatos.Controls.Add(this.button1);
             this.tbRegistrarZapatos.Controls.Add(this.btnRegistrar);
             this.tbRegistrarZapatos.Controls.Add(this.btnAñadirImagen);
-            this.tbRegistrarZapatos.Controls.Add(this.btnEliminar);
             this.tbRegistrarZapatos.Controls.Add(this.gbProductosAlmacen);
             this.tbRegistrarZapatos.Controls.Add(this.pb);
             this.tbRegistrarZapatos.Controls.Add(this.gbInfoZapato);
             this.tbRegistrarZapatos.Location = new System.Drawing.Point(4, 22);
             this.tbRegistrarZapatos.Name = "tbRegistrarZapatos";
             this.tbRegistrarZapatos.Padding = new System.Windows.Forms.Padding(3);
-            this.tbRegistrarZapatos.Size = new System.Drawing.Size(1072, 556);
+            this.tbRegistrarZapatos.Size = new System.Drawing.Size(1134, 556);
             this.tbRegistrarZapatos.TabIndex = 0;
             this.tbRegistrarZapatos.Text = "Registrar Zapatos";
             this.tbRegistrarZapatos.UseVisualStyleBackColor = true;
             // 
-            // tbActualizarInfo
+            // btnRegistrar
             // 
-            this.tbActualizarInfo.Controls.Add(this.btnActualizarRegistro);
-            this.tbActualizarInfo.Controls.Add(this.textBox3);
-            this.tbActualizarInfo.Controls.Add(this.btnBuscar);
-            this.tbActualizarInfo.Controls.Add(this.lblBuscar);
-            this.tbActualizarInfo.Controls.Add(this.gbProductosAlmacen2);
-            this.tbActualizarInfo.Controls.Add(this.gbInfoZapato2);
-            this.tbActualizarInfo.Location = new System.Drawing.Point(4, 22);
-            this.tbActualizarInfo.Name = "tbActualizarInfo";
-            this.tbActualizarInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tbActualizarInfo.Size = new System.Drawing.Size(1134, 556);
-            this.tbActualizarInfo.TabIndex = 1;
-            this.tbActualizarInfo.Text = "Actualizar Informacion";
-            this.tbActualizarInfo.UseVisualStyleBackColor = true;
+            this.btnRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Location = new System.Drawing.Point(914, 190);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(90, 23);
+            this.btnRegistrar.TabIndex = 13;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // btnEliminar
+            // btnAñadirImagen
             // 
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(843, 231);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 11;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnAñadirImagen.FlatAppearance.BorderSize = 0;
+            this.btnAñadirImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAñadirImagen.Location = new System.Drawing.Point(914, 150);
+            this.btnAñadirImagen.Name = "btnAñadirImagen";
+            this.btnAñadirImagen.Size = new System.Drawing.Size(90, 23);
+            this.btnAñadirImagen.TabIndex = 12;
+            this.btnAñadirImagen.Text = "Añadir Imagen";
+            this.btnAñadirImagen.UseVisualStyleBackColor = true;
             // 
             // gbProductosAlmacen
             // 
-            this.gbProductosAlmacen.Controls.Add(this.dataGridView1);
+            this.gbProductosAlmacen.Controls.Add(this.dgvAlmacen);
             this.gbProductosAlmacen.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbProductosAlmacen.Location = new System.Drawing.Point(8, 260);
+            this.gbProductosAlmacen.Location = new System.Drawing.Point(25, 285);
             this.gbProductosAlmacen.Name = "gbProductosAlmacen";
             this.gbProductosAlmacen.Size = new System.Drawing.Size(962, 249);
             this.gbProductosAlmacen.TabIndex = 8;
             this.gbProductosAlmacen.TabStop = false;
             this.gbProductosAlmacen.Text = "Productos de Almacen";
             // 
-            // dataGridView1
+            // dgvAlmacen
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(929, 216);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvAlmacen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlmacen.Location = new System.Drawing.Point(18, 20);
+            this.dgvAlmacen.Name = "dgvAlmacen";
+            this.dgvAlmacen.Size = new System.Drawing.Size(929, 216);
+            this.dgvAlmacen.TabIndex = 0;
             // 
             // pb
             // 
-            this.pb.Location = new System.Drawing.Point(766, 18);
+            this.pb.Location = new System.Drawing.Point(832, 16);
             this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(244, 123);
+            this.pb.Size = new System.Drawing.Size(251, 123);
             this.pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb.TabIndex = 7;
             this.pb.TabStop = false;
@@ -238,20 +234,80 @@
             this.lblNombreZapato.TabIndex = 0;
             this.lblNombreZapato.Text = "Nombre Zapato :";
             // 
-            // btnAñadirImagen
+            // tbActualizarInfo
             // 
-            this.btnAñadirImagen.FlatAppearance.BorderSize = 0;
-            this.btnAñadirImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAñadirImagen.Location = new System.Drawing.Point(843, 150);
-            this.btnAñadirImagen.Name = "btnAñadirImagen";
-            this.btnAñadirImagen.Size = new System.Drawing.Size(90, 23);
-            this.btnAñadirImagen.TabIndex = 12;
-            this.btnAñadirImagen.Text = "Añadir Imagen";
-            this.btnAñadirImagen.UseVisualStyleBackColor = true;
+            this.tbActualizarInfo.Controls.Add(this.btnActualizarRegistro);
+            this.tbActualizarInfo.Controls.Add(this.txtBuscar);
+            this.tbActualizarInfo.Controls.Add(this.btnBuscar);
+            this.tbActualizarInfo.Controls.Add(this.lblBuscar);
+            this.tbActualizarInfo.Controls.Add(this.gbProductosAlmacen2);
+            this.tbActualizarInfo.Controls.Add(this.gbInfoZapato2);
+            this.tbActualizarInfo.Location = new System.Drawing.Point(4, 22);
+            this.tbActualizarInfo.Name = "tbActualizarInfo";
+            this.tbActualizarInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tbActualizarInfo.Size = new System.Drawing.Size(1134, 556);
+            this.tbActualizarInfo.TabIndex = 1;
+            this.tbActualizarInfo.Text = "Actualizar Informacion";
+            this.tbActualizarInfo.UseVisualStyleBackColor = true;
+            // 
+            // btnActualizarRegistro
+            // 
+            this.btnActualizarRegistro.Location = new System.Drawing.Point(762, 230);
+            this.btnActualizarRegistro.Name = "btnActualizarRegistro";
+            this.btnActualizarRegistro.Size = new System.Drawing.Size(364, 41);
+            this.btnActualizarRegistro.TabIndex = 13;
+            this.btnActualizarRegistro.Text = "Actualizar Registro";
+            this.btnActualizarRegistro.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(762, 55);
+            this.txtBuscar.Multiline = true;
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(246, 33);
+            this.txtBuscar.TabIndex = 12;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(1040, 55);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 33);
+            this.btnBuscar.TabIndex = 11;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.Location = new System.Drawing.Point(784, 23);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(63, 22);
+            this.lblBuscar.TabIndex = 10;
+            this.lblBuscar.Text = "Buscar";
+            // 
+            // gbProductosAlmacen2
+            // 
+            this.gbProductosAlmacen2.Controls.Add(this.dgvEdit);
+            this.gbProductosAlmacen2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbProductosAlmacen2.Location = new System.Drawing.Point(8, 277);
+            this.gbProductosAlmacen2.Name = "gbProductosAlmacen2";
+            this.gbProductosAlmacen2.Size = new System.Drawing.Size(1094, 260);
+            this.gbProductosAlmacen2.TabIndex = 9;
+            this.gbProductosAlmacen2.TabStop = false;
+            this.gbProductosAlmacen2.Text = "Productos de Almacen";
+            // 
+            // dgvEdit
+            // 
+            this.dgvEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEdit.Location = new System.Drawing.Point(18, 28);
+            this.dgvEdit.Name = "dgvEdit";
+            this.dgvEdit.Size = new System.Drawing.Size(1054, 216);
+            this.dgvEdit.TabIndex = 0;
             // 
             // gbInfoZapato2
             // 
-            this.gbInfoZapato2.Controls.Add(this.cmbCategoia2);
+            this.gbInfoZapato2.Controls.Add(this.cbActualizar);
             this.gbInfoZapato2.Controls.Add(this.dtpFechaRegistro2);
             this.gbInfoZapato2.Controls.Add(this.txtPrecio2);
             this.gbInfoZapato2.Controls.Add(this.txtNombreZapato2);
@@ -267,13 +323,13 @@
             this.gbInfoZapato2.TabStop = false;
             this.gbInfoZapato2.Text = "Info. Zapato";
             // 
-            // cmbCategoia2
+            // cbActualizar
             // 
-            this.cmbCategoia2.FormattingEnabled = true;
-            this.cmbCategoia2.Location = new System.Drawing.Point(227, 209);
-            this.cmbCategoia2.Name = "cmbCategoia2";
-            this.cmbCategoia2.Size = new System.Drawing.Size(333, 29);
-            this.cmbCategoia2.TabIndex = 7;
+            this.cbActualizar.FormattingEnabled = true;
+            this.cbActualizar.Location = new System.Drawing.Point(227, 209);
+            this.cbActualizar.Name = "cbActualizar";
+            this.cbActualizar.Size = new System.Drawing.Size(333, 29);
+            this.cbActualizar.TabIndex = 7;
             // 
             // dtpFechaRegistro2
             // 
@@ -332,71 +388,16 @@
             this.lblNombreZapato2.TabIndex = 0;
             this.lblNombreZapato2.Text = "Nombre Zapato :";
             // 
-            // gbProductosAlmacen2
+            // button1
             // 
-            this.gbProductosAlmacen2.Controls.Add(this.dataGridView2);
-            this.gbProductosAlmacen2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbProductosAlmacen2.Location = new System.Drawing.Point(8, 277);
-            this.gbProductosAlmacen2.Name = "gbProductosAlmacen2";
-            this.gbProductosAlmacen2.Size = new System.Drawing.Size(1094, 260);
-            this.gbProductosAlmacen2.TabIndex = 9;
-            this.gbProductosAlmacen2.TabStop = false;
-            this.gbProductosAlmacen2.Text = "Productos de Almacen";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(18, 20);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1054, 216);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscar.Location = new System.Drawing.Point(784, 23);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(63, 22);
-            this.lblBuscar.TabIndex = 10;
-            this.lblBuscar.Text = "Buscar";
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Location = new System.Drawing.Point(843, 191);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistrar.TabIndex = 13;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(1040, 55);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 33);
-            this.btnBuscar.TabIndex = 11;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(762, 55);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(246, 33);
-            this.textBox3.TabIndex = 12;
-            // 
-            // btnActualizarRegistro
-            // 
-            this.btnActualizarRegistro.Location = new System.Drawing.Point(762, 230);
-            this.btnActualizarRegistro.Name = "btnActualizarRegistro";
-            this.btnActualizarRegistro.Size = new System.Drawing.Size(364, 41);
-            this.btnActualizarRegistro.TabIndex = 13;
-            this.btnActualizarRegistro.Text = "Actualizar Registro";
-            this.btnActualizarRegistro.UseVisualStyleBackColor = true;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(914, 219);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmMantenimientoZapatos
             // 
@@ -406,19 +407,20 @@
             this.Controls.Add(this.tcPestañas);
             this.Name = "frmMantenimientoZapatos";
             this.Text = "frmMantenimientoZapatos";
+            this.Load += new System.EventHandler(this.frmMantenimientoZapatos_Load);
             this.tcPestañas.ResumeLayout(false);
             this.tbRegistrarZapatos.ResumeLayout(false);
-            this.tbActualizarInfo.ResumeLayout(false);
-            this.tbActualizarInfo.PerformLayout();
             this.gbProductosAlmacen.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.gbInfoZapato.ResumeLayout(false);
             this.gbInfoZapato.PerformLayout();
+            this.tbActualizarInfo.ResumeLayout(false);
+            this.tbActualizarInfo.PerformLayout();
+            this.gbProductosAlmacen2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEdit)).EndInit();
             this.gbInfoZapato2.ResumeLayout(false);
             this.gbInfoZapato2.PerformLayout();
-            this.gbProductosAlmacen2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,9 +429,8 @@
 
         private System.Windows.Forms.TabControl tcPestañas;
         private System.Windows.Forms.TabPage tbRegistrarZapatos;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.GroupBox gbProductosAlmacen;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvAlmacen;
         private System.Windows.Forms.PictureBox pb;
         private System.Windows.Forms.GroupBox gbInfoZapato;
         private System.Windows.Forms.ComboBox cbCategoria;
@@ -444,9 +445,9 @@
         private System.Windows.Forms.Button btnAñadirImagen;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.GroupBox gbProductosAlmacen2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvEdit;
         private System.Windows.Forms.GroupBox gbInfoZapato2;
-        private System.Windows.Forms.ComboBox cmbCategoia2;
+        private System.Windows.Forms.ComboBox cbActualizar;
         private System.Windows.Forms.DateTimePicker dtpFechaRegistro2;
         private System.Windows.Forms.TextBox txtPrecio2;
         private System.Windows.Forms.TextBox txtNombreZapato2;
@@ -456,7 +457,8 @@
         private System.Windows.Forms.Label lblNombreZapato2;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnActualizarRegistro;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button button1;
     }
 }

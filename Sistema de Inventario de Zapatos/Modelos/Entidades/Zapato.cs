@@ -71,5 +71,23 @@ namespace Modelos.Entidades
                 return false;
             }
         }
+        public bool eliminarZapatos(int id)
+        {
+            try
+            {
+                SqlConnection conectar = ConexionDB.Conectar();
+                string consultaDelete = "Delete from zapatos where id = @id";
+                SqlCommand delete = new SqlCommand(consultaDelete, conectar);
+                delete.Parameters.AddWithValue("@id", id);
+                delete.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+
+            }
+        }
+
     }
 }
