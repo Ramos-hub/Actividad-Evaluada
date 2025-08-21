@@ -30,6 +30,7 @@
         {
             this.tcPestañas = new System.Windows.Forms.TabControl();
             this.tbRegistrarZapatos = new System.Windows.Forms.TabPage();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnAñadirImagen = new System.Windows.Forms.Button();
             this.gbProductosAlmacen = new System.Windows.Forms.GroupBox();
@@ -60,7 +61,6 @@
             this.lblFechaRegistro2 = new System.Windows.Forms.Label();
             this.lblPrecio2 = new System.Windows.Forms.Label();
             this.lblNombreZapato2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tcPestañas.SuspendLayout();
             this.tbRegistrarZapatos.SuspendLayout();
             this.gbProductosAlmacen.SuspendLayout();
@@ -86,7 +86,7 @@
             // 
             // tbRegistrarZapatos
             // 
-            this.tbRegistrarZapatos.Controls.Add(this.button1);
+            this.tbRegistrarZapatos.Controls.Add(this.btnEliminar);
             this.tbRegistrarZapatos.Controls.Add(this.btnRegistrar);
             this.tbRegistrarZapatos.Controls.Add(this.btnAñadirImagen);
             this.tbRegistrarZapatos.Controls.Add(this.gbProductosAlmacen);
@@ -99,6 +99,18 @@
             this.tbRegistrarZapatos.TabIndex = 0;
             this.tbRegistrarZapatos.Text = "Registrar Zapatos";
             this.tbRegistrarZapatos.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Location = new System.Drawing.Point(914, 219);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(90, 23);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnRegistrar
             // 
@@ -388,17 +400,6 @@
             this.lblNombreZapato2.TabIndex = 0;
             this.lblNombreZapato2.Text = "Nombre Zapato :";
             // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(914, 219);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // frmMantenimientoZapatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,6 +460,6 @@
         private System.Windows.Forms.Button btnActualizarRegistro;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

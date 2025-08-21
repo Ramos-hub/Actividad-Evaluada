@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|solutionrelative:vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\modelos\\conexion\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|solutionrelative:modelos\\conexion\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\actividad-evaluada\\sistema de inventario de zapatos\\vistas\\formularios\\frmmantenimientozapatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmmantenimientozapatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,11 +19,7 @@
       "RelativeMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\zapato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|solutionrelative:vistas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|c:\\users\\estudiante\\desktop\\actividad-evaluada\\sistema de inventario de zapatos\\vistas\\formularios\\frmmantenimientozapatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\vistas\\formularios\\frmmantenimientozapatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7A029E45-75EB-4181-AB4D-3323EFF5646D}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmmantenimientozapatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\modelos\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\modelos\\conexion\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16537E7-6FF6-4238-BEB0-33CD99B9F9C9}|Modelos\\Modelos.csproj|solutionrelative:modelos\\conexion\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,24 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmMantenimientoZapatos.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Vistas\\Formularios\\frmMantenimientoZapatos.cs",
               "RelativeDocumentMoniker": "Vistas\\Formularios\\frmMantenimientoZapatos.cs",
               "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Vistas\\Formularios\\frmMantenimientoZapatos.cs",
               "RelativeToolTip": "Vistas\\Formularios\\frmMantenimientoZapatos.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwD8AAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwFwAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T20:05:14.881Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "frmMantenimientoZapatos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Vistas\\Formularios\\frmMantenimientoZapatos.cs",
               "RelativeDocumentMoniker": "Vistas\\Formularios\\frmMantenimientoZapatos.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Vistas\\Program.cs",
               "RelativeDocumentMoniker": "Vistas\\Program.cs",
@@ -80,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Zapato.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Entidades\\Zapato.cs",
               "RelativeDocumentMoniker": "Modelos\\Entidades\\Zapato.cs",
               "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Entidades\\Zapato.cs",
               "RelativeToolTip": "Modelos\\Entidades\\Zapato.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwBAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-14T19:55:11.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Talla.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Entidades\\Talla.cs",
               "RelativeDocumentMoniker": "Modelos\\Entidades\\Talla.cs",
@@ -101,11 +101,12 @@
               "RelativeToolTip": "Modelos\\Entidades\\Talla.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:54:44.353Z"
+              "WhenOpened": "2025-08-14T19:54:44.353Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Entidades\\Categoria.cs",
               "RelativeDocumentMoniker": "Modelos\\Entidades\\Categoria.cs",
@@ -113,19 +114,21 @@
               "RelativeToolTip": "Modelos\\Entidades\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:54:16.772Z"
+              "WhenOpened": "2025-08-14T19:54:16.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ConexionDB.cs",
               "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Conexion\\ConexionDB.cs",
               "RelativeDocumentMoniker": "Modelos\\Conexion\\ConexionDB.cs",
               "ToolTip": "C:\\Users\\Estudiante\\Desktop\\Actividad-Evaluada\\Sistema de Inventario de Zapatos\\Modelos\\Conexion\\ConexionDB.cs",
               "RelativeToolTip": "Modelos\\Conexion\\ConexionDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T19:51:47.878Z"
+              "WhenOpened": "2025-08-14T19:51:47.878Z",
+              "EditorCaption": ""
             }
           ]
         }

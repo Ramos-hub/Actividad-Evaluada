@@ -53,6 +53,8 @@ namespace Vistas.Formularios
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            try
+            {
             Zapato zap = new Zapato();
             zap.Nombre = txtNombreZapato.Text;
             zap.Precio = double.Parse(txtPrecio.Text);
@@ -62,6 +64,34 @@ namespace Vistas.Formularios
             zap.insertarZapatos();
             cargarZapatos();
             MessageBox.Show("Excelente datos registrados", "Datos correctos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error"+ ex, "Error de informacion",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Zapato zapatoEliminar = new Zapato();
+            int id = int.Parse(dgvAlmacen.CurrentRow.Cells[0].Value.ToString());
+            string registroAEliminar = dgvAlmacen.CurrentRow.Cells[1].Value.ToString();
+            DialogResult respuesta = MessageBox.Show("¿Quieres eliminar este registro?\n" + registroAEliminar,
+                "Advertencia eliminaras un registro", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (respuesta==DialogResult.Yes)
+            {
+                if (zapatoEliminar.eliminarZapatos(id)== true)
+                {
+                    MessageBox.Show("Registro eliminado \n" + registroAEliminar, "Eliminado", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cargarZapatos();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Registro no eliminado", "seleccionado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
